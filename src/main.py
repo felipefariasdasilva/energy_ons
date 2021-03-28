@@ -3,7 +3,7 @@ from energy_crawler import request_data
 from parse_data import select_required_data
 from apply_data_excel import apply_new_data_in_excel
 
-def main(event= None, context= None):
+def main(event, context):
     
     print(" >> iniciando serviço de crawler...")
 
@@ -14,4 +14,4 @@ def main(event= None, context= None):
 
 
 if __name__=='__main__':
-    main()
+    main(event, context)

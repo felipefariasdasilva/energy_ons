@@ -10,10 +10,16 @@ As instruções a seguir irão lhe proporcionar uma cópia deste projeto e de co
 
 Dependências necessárias para se instalar o software e como instalá-las.
 
-1. É necessário que você tenha Docker instalado na sua máquina. Para verificar, rode o seguinte comando:
+1. É necessário que você tenha [docker](https://www.docker.com/products/docker-desktop) instalado na sua máquina. Para verificar, rode o seguinte comando:
 
 ```bash
-$ docker -version
+$ docker --version
+```
+
+2. O [git](https://git-scm.com/) é fundamental estar na sua máquina, verifique se está instalado usando o comando:
+
+```bash
+$ git --version
 ```
 
 ### Instalação
@@ -44,15 +50,16 @@ Para rodar os testes automáticos do seu sistema siga os comandos abaixo:
 
 ```bash
 # rodando todos testes unitários
-$ python ...
+$ python -m unittest
 ```
 
+> Saiba mais sobre teste unitários nesse [link](https://docs.python.org/pt-br/3/library/unittest.html)
 ### Análise dos testes fim-a-fim
 
 Explique o que esses testes testam e o porquê.
 
 ```
-Dê um exemplo
+$ Dê um exemplo
 ```
 
 ### Estilo de criação dos testes
@@ -60,7 +67,7 @@ Dê um exemplo
 Explique o que esses testes testam e o porque.
 
 ```
-Dê um exemplo
+$ Dê um exemplo
 ```
 
 ## Deployment
@@ -123,7 +130,7 @@ $ aws ecr get-login-password --region <REGIAO_DO_REPOSITORIO_ECR> | docker login
 
 ```bash
 # faça o build da sua imagem docker
-$ docker build -t <NOME_DA_SUA_IMAGEM> .
+$ docker build -t <NOME_DA_SUA_IMAGEM>:<VERSÃO_DA_SUA_IMAGEM> .
 ```
 
 ```bash
