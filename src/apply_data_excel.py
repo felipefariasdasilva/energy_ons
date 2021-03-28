@@ -1,6 +1,5 @@
 import pandas as pd
-from constants import *
-from s3_handler import get_client
+from s3_handler import get_client, put_csv_in_bucket
 from io import StringIO
 
 def apply_new_data_in_excel(df, novos_dados):
@@ -13,9 +12,5 @@ def apply_new_data_in_excel(df, novos_dados):
     df.to_csv(io)
 
     client = get_client()
+    put_csv_in_bucket(client, io.getvalue())
 
-    client.put_object(
-        Body = io.getvalue(),  
-        Bucket = AWS_BUCKET_NAME,
-        Key = "Carga_horaria_result_2.csv"
-    )

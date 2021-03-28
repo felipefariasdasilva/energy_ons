@@ -2,6 +2,7 @@
 import pandas as pd
 import time
 from datetime import datetime
+from constants import *
 
 def select_required_data(json):
     
@@ -20,22 +21,22 @@ def select_required_data(json):
     novos_dados = get_columns()
     
     # #Submercado Norte
-    norte = get_serie(data_hora, tempo_ons, 'N', norte_verificada)
+    norte = get_serie(data_hora, tempo_ons, REGION_NORTH, norte_verificada)
     lista = pd.DataFrame( [norte] )
     novos_dados = add_data_in_list(lista, novos_dados)
 
     # #Submercado Nordeste
-    nordeste = get_serie(data_hora, tempo_ons, 'NE', nordeste_verificada)
+    nordeste = get_serie(data_hora, tempo_ons, REGION_NORTHEAST, nordeste_verificada)
     lista = pd.DataFrame( [nordeste] )
     novos_dados = add_data_in_list(lista, novos_dados)
 
     # #Submercado Sudeste/Centro-Oeste
-    sudeste = get_serie(data_hora, tempo_ons, 'SE', sudeste_verificada)
+    sudeste = get_serie(data_hora, tempo_ons, REGION_SOUTHEAST, sudeste_verificada)
     lista = pd.DataFrame( [sudeste] )
     novos_dados = add_data_in_list(lista, novos_dados)
 
     # #Submercado Sul
-    sul = get_serie(data_hora, tempo_ons,'S',sul_verificada)
+    sul = get_serie(data_hora, tempo_ons, REGION_SOUTH, sul_verificada)
     lista = pd.DataFrame( [sul] )
     novos_dados = add_data_in_list(lista, novos_dados)
 

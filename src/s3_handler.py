@@ -27,6 +27,13 @@ def get_csv_in_bucket(client):
                 Key = AWS_OBJECT_KEY
             )
 
+def put_csv_in_bucket(client, body):
+    client.put_object(
+        Body = body,  
+        Bucket = AWS_BUCKET_NAME,
+        Key = AWS_NEW_OBJECT_KEY
+    )
+
 def get_body_of(csv):
     return csv['Body'].read().decode(WINDOWS_1252_DECODE)
 
