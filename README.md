@@ -189,6 +189,10 @@ radius = 2
 area_of_circle = PI * radius * radius
 ```
 
-11. Aprenda usar o [Github](https://github.com). o Recomendado é deixar na branch `main` o código que está estável, testado e em produção. Quando estiver em desenvolvimento, crie branch específica para aquela atividade, assim você garante que o código estável só sera modificado caso o novo código esteja pronto pra isso.
+11. Aprenda usar o [Github](https://github.com); 
 
-12. Use e abuse de `IDE's`, a maioria delas possui diversas features que nos ajuda na implementação do nosso código, além de permitir a instalação de extensões. Eu recomendo o [PyCharm](https://www.jetbrains.com/pycharm/)
+> O recomendado é deixar na branch `main` o código que está estável, testado e em produção. Quando estiver em `desenvolvimento`, crie branch específica para aquela atividade, assim você garante que o código estável só sera modificado caso o novo código esteja pronto pra isso.
+
+12. Use e abuse de `IDE's`;
+
+> A maioria delas possui diversas features que nos ajuda na implementação do nosso código, além de permitir a instalação de extensões. Eu recomendo o [PyCharm](https://www.jetbrains.com/pycharm/)
