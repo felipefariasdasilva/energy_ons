@@ -32,10 +32,10 @@ $ git clone https://github.com/felipefariasdasilva/energy_ons.git
 $ cd energy_ons
 ```
 
-3. Execute a aplicação com Docker Compose
+3. Execute a aplicação com `docker-compose`
 
 ```bash
-$ docker-compose up -d
+$ docker-compose up --build
 ```
 
 ## Executando os testes
@@ -98,6 +98,7 @@ Esse projeto é licenciado pela MIT License - veja também [LICENSE.md](LICENSE.
 ## Apêndice
 
 ### AWS CLI Tool
+
 > Baixe e instale o [AWS CLI TOOL](https://aws.amazon.com/pt/cli/)
 
 ```bash
@@ -106,9 +107,13 @@ $ aws configure
 ```
 
 ### Chaves de Acesso
+
 > Você irá precisar das suas chaves de acesso que podem ser obtidas na página do [IAM (Identity and Acess Management)](https://console.aws.amazon.com/iam/home?region=us-east-2#/security_credentials$access_key)
 
 ### AWS ECR (Elastic Container Registry)
+
+> Crie um repositório no ECR
+
 ```bash
 # autenticação aws no ECR
 $ aws ecr get-login-password --region <REGIAO_DO_REPOSITORIO_ECR> | docker login --username AWS --password-stdin <URI_DO_REPOSITORIO_ECR>

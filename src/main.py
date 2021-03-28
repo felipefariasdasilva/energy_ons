@@ -5,6 +5,8 @@ from apply_data_excel import apply_new_data_in_excel
 
 def main(event= None, context= None):
     
+    print(" >> iniciando serviço de crawler...")
+
     df = get_file()
     json = request_data()
     dados = select_required_data(json)

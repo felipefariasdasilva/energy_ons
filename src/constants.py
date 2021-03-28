@@ -9,6 +9,7 @@ AWS_OBJECT_KEY = 'Carga_horaria.csv'
 
 # FILE DECODER
 WINDOWS_1252_DECODE = 'windows-1252'
+UTF8_DECODE = 'utf-8'
 
 # URL
 ONS_URL = "http://tr.ons.org.br/Content/GetBalancoEnergetico/null"

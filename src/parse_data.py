@@ -5,7 +5,7 @@ from datetime import datetime
 
 def select_required_data(json):
     
-    print("select required data...")
+    print(" >> select required data...")
 
     # # Selecionando os dados desejados
     tempo_ons = json['Data']
@@ -17,20 +17,7 @@ def select_required_data(json):
     
     # # Montando o DataFrame que adicionará os dados ao Excel
     novos_dados = []
-
-    novos_dados = pd.DataFrame(
-        columns =
-            [
-                'Última Atualização', 
-                'Submercado', 
-                'Carga_Verificada',
-                'Dia',
-                'Mês',
-                'Ano',
-                'Hora',
-                'Minuto'
-            ]
-    )
+    novos_dados = get_columns()
     
     # #Submercado Norte
     norte = get_serie(data_hora, tempo_ons, 'N', norte_verificada)
@@ -54,6 +41,20 @@ def select_required_data(json):
 
     return novos_dados
 
+def get_columns():
+    return pd.DataFrame(
+        columns =
+            [
+                'Última Atualização', 
+                'Submercado', 
+                'Carga_Verificada',
+                'Dia',
+                'Mês',
+                'Ano',
+                'Hora',
+                'Minuto'
+            ]
+    )
 
 def get_serie(data_hora, tempo_ons, region, region_verified):
     

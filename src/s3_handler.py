@@ -1,6 +1,7 @@
 import pandas as pd
 import boto3
 from constants import *
+from io import StringIO
 
 def get_file():
 
@@ -30,4 +31,4 @@ def get_body_of(csv):
     return csv['Body'].read().decode(WINDOWS_1252_DECODE)
 
 def read_csv(body):
-    return pd.read_csv(body)
+    return pd.read_csv(StringIO(body))
