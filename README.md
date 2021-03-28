@@ -145,30 +145,30 @@ $ docker push <URI_DO_REPOSITORIO_ECT>:<VERSÃO_DA_SUA_IMAGEM>
 
 ## Sugestões de melhoria
 
-1. Criar testes unitários;
+1. Criar `testes unitários`;
 
 > Pode começar por [aqui](https://dev.to/womakerscode/testes-em-python-parte-1-introducao-43ei#:~:text=%20Testes%20em%20Python%20-%20Parte%201%3A%20Introdu%C3%A7%C3%A3o,para%20fazer%20o%20teste%20rodar.%20Essa...%20More%20)
 
-2. Deixar valores sensíveis (access key, por exemplo) em variáveis ambiente;
+2. Deixar valores sensíveis (access key, por exemplo) em `variáveis ambiente`;
 
-> Leia mais [aqui] (https://dev.to/jakewitcher/using-env-files-for-environment-variables-in-python-applications-55a1)
+> Leia mais [aqui](https://dev.to/jakewitcher/using-env-files-for-environment-variables-in-python-applications-55a1)
 
-3. Utilizar try/catch para capturar exceção e não deixar o sistema morrer, principalmente em conexões e operações de abrir/fechar arquivos;
+3. Utilizar `try/catch` para capturar exceção e não deixar o sistema morrer, principalmente em conexões e operações de abrir/fechar arquivos;
 
 > Etapa bem importante pra saúde da aplicação, leia [aqui](https://www.bing.com/newtabredir?url=https%3A%2F%2Fmedium.com%2F%40halilylm%2Ftry-except-blocks-in-python-7372fe20d4af)
 
-4. Versionar código-fonte;
-5. Versionar imagem docker;
+4. `Versionar` código-fonte;
+5. `Versionar` imagem docker;
 
-6. Criar o deploy automático na AWS quando uma alteração no github for identificada;
+6. Criar o `deploy` automático na AWS quando uma alteração no github for identificada;
 
-> Leia um pouco sobre CI/CD e como utilizar com a AWS
+> Leia um pouco sobre `CI/CD` e como utilizar com a AWS
 
-7. Utilizar banco de dados relacionais ao invés de arquivo .csv;
+7. Utilizar `banco de dados relacionais` ao invés de arquivo .csv;
 
 > Postgres, MySql, MySqlite, etc são alguns exemplos
 
-8. Usar e abusar da programação orientada a objetos;
+8. Usar e abusar da `programação orientada a objetos`;
 
 > Fazer código procedural não é errado, porém você não aproveita os recursos que a linguagem oferece
 
@@ -180,7 +180,7 @@ $ docker push <URI_DO_REPOSITORIO_ECT>:<VERSÃO_DA_SUA_IMAGEM>
 
 Exemplo:
 ```python
-# modo errado de calcular do círculo
+# modo errado de calcular área do círculo
 a = 3.14 * 2 * 2
 
 # modo correto de calcular área do círculo
