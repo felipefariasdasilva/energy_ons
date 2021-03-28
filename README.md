@@ -180,10 +180,10 @@ $ docker push <URI_DO_REPOSITORIO_ECT>:<VERSÃO_DA_SUA_IMAGEM>
 
 Exemplo:
 ```python
-# modo errado de calcular área do círculo
+# modo não recomendado de calcular área do círculo
 a = 3.14 * 2 * 2
 
-# modo correto de calcular área do círculo
+# modo recomendado de calcular área do círculo
 PI = 3.14159
 radius = 2
 area_of_circle = PI * radius * radius
