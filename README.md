@@ -164,7 +164,7 @@ $ docker push <URI_DO_REPOSITORIO_ECT>:<VERSÃO_DA_SUA_IMAGEM>
 
 > Leia um pouco sobre `CI/CD` e como utilizar com a AWS
 
-7. Utilizar `banco de dados relacionais` ao invés de arquivo .csv;
+7. Utilizar `banco de dados relacionais` ao invés de arquivo `.csv`;
 
 > Postgres, MySql, MySqlite, etc são alguns exemplos
 
@@ -172,11 +172,11 @@ $ docker push <URI_DO_REPOSITORIO_ECT>:<VERSÃO_DA_SUA_IMAGEM>
 
 > Fazer código procedural não é errado, porém você não aproveita os recursos que a linguagem oferece
 
-9. Implementar classe/arquivo sempre com uma responsabilidade única;
+9. Implementar classe/arquivo sempre com uma `responsabilidade única`;
 
 > Nada de criar uma classe/arquivo "Deus", ou seja, aquela classe/arquivo que faz tudo! O melhor a fazer é separar cada tarefa em funções/classe bem específica e bem delimitada. "Faça apenas uma coisa e faça-a bem feito". Se quiser saber mais pesquise pelo conceito "SOLID".
 
-10. Não implementar strings e números do nada, sempre aplicar os valores a uma variável com um nome auto-explicativo;
+10. Não implementar strings e números do nada, sempre aplicar os valores a uma variável com um nome `auto-explicativo`;
 
 Exemplo:
 ```python
