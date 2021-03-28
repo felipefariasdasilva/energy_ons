@@ -1,4 +1,4 @@
-# :zap: Cargas Verificadas Crwaler
+# :zap: Cargas Verificadas Crawler
 
 Web Scraping das Cargas Verificadas Fornecidas pelo [ONS](http://tr.ons.org.br/)
 
@@ -23,13 +23,13 @@ Para rodar a aplicação, execute os próximos passos:
 1. Faça o clone do projeto
 
 ```bash
-$ git clone https://github.com/...
+$ git clone https://github.com/felipefariasdasilva/energy_ons.git
 ```
 
 2. Entre na pasta
 
 ```bash
-$ cd ...
+$ cd energy_ons
 ```
 
 3. Execute a aplicação com Docker Compose
@@ -44,9 +44,7 @@ Para rodar os testes automáticos do seu sistema siga os comandos abaixo:
 
 ```bash
 # rodando todos testes unitários
-
 $ python ...
-
 ```
 
 ### Análise dos testes fim-a-fim
@@ -83,7 +81,7 @@ Por favor leia [CONTRIBUTING.md]() para mais detalhes a respeito do nosso códig
 Nós usamos [GitHub](https://github.com/) para versionamento. Para visualizar as versões disponíveis veja [tags nesse repositórios](https://github.com/your/project/tags).
 
 ## Autores
- ()
+
 * **Hugo Araujo** - *Trabalho inicial* - [hugo.araujo@vivazenergia.com.br](hugo.araujo@vivazenergia.com.br)
 
 Veja também a lista completa de [contribuidores](https://github.com/your/project/contributors) que contribuiram para o desenvolvimento deste projeto.
@@ -99,6 +97,7 @@ Esse projeto é licenciado pela MIT License - veja também [LICENSE.md](LICENSE.
 
 ## Apêndice
 
+### AWS CLI Tool
 > Baixe e instale o [AWS CLI TOOL](https://aws.amazon.com/pt/cli/)
 
 ```bash
@@ -107,12 +106,15 @@ $ aws configure
 ```
 
 ### Chaves de Acesso
-> Você irá precisar das suas chanves de acesso que podem ser obtidas [aqui](https://console.aws.amazon.com/iam/home?region=us-east-2#/security_credentials$access_key)
+> Você irá precisar das suas chaves de acesso que podem ser obtidas na página do [IAM (Identity and Acess Management)](https://console.aws.amazon.com/iam/home?region=us-east-2#/security_credentials$access_key)
 
+### AWS ECR (Elastic Container Registry)
 ```bash
 # autenticação aws no ECR
 $ aws ecr get-login-password --region <REGIAO_DO_REPOSITORIO_ECR> | docker login --username AWS --password-stdin <URI_DO_REPOSITORIO_ECR>
 ```
+
+### Docker
 
 ```bash
 # faça o build da sua imagem docker
