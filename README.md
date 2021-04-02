@@ -90,6 +90,7 @@ Nós usamos [GitHub](https://github.com/) para versionamento. Para visualizar as
 ## Autores
 
 * **Hugo Araujo** - *Trabalho inicial* - [hugo.araujo@vivazenergia.com.br](hugo.araujo@vivazenergia.com.br)
+* **Felipe Farias** - *Trabalho inicial* - [feliipefarias@outlook.com](feliipefarias@outlook.com)
 
 Veja também a lista completa de [contribuidores](https://github.com/your/project/contributors) que contribuiram para o desenvolvimento deste projeto.
 
